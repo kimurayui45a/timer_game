@@ -11,6 +11,15 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 *.log
+# 大きな TextMeshPro フォントアセット
+Assets/NotoSansJP-*.asset
+Assets/NotoSansJP-*.asset.meta
+
+Assets/NotoSansJP-Medium SDF.asset
+Assets/NotoSansJP-Medium SDF.asset.meta
+
+Assets/TextMesh Pro/Resources/*.asset
+Assets/TextMesh Pro/Resources/*.asset.meta
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.
 *.blend1
