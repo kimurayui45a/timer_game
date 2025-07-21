@@ -62,14 +62,13 @@ public class GameManager : MonoBehaviour
 
             if (jobData != null)
             {
-                tapPoint.jobData = jobData; // 割り当て
+                tapPoint.jobData = jobData;
             }
             else
             {
                 Debug.LogWarning($"JobData が見つかりません: jobNo = {myJobNo}");
             }
         }
-
 
         // 褒賞データの最大数を GameData クラスに登録
         GameData.instance.GetMaxRewardDataCount(rewardDataSO.rewardDatasList.Count);
