@@ -157,4 +157,9 @@ public class GameData : MonoBehaviour
         totalRewardPoint = PlayerPrefsHelper.LoadIntData(TOTAL_REWARD_POINT_SAVE_KEY);
     }
 
+    public EarnedReward GetRewardNumber(int index)
+    {
+        return earnedRewardsList[index];
+    }
+
 }
