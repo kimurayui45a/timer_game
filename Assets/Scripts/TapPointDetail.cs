@@ -77,11 +77,13 @@ public class TapPointDetail : MonoBehaviour
     /// <summary>
     /// お使いの準備
     /// </summary>
-    public void PrapareteJobs()
-    {
+    public void PrapareteJobs(int remainingTime)
+    {　　　//　<=　☆　①引数を追加します
         ChangeJobSprite();
         IsJobs = true;
-        StartCoroutine(WorkingJobs(jobData.jobTime));
+
+        // お使い開始
+        StartCoroutine(WorkingJobs(remainingTime));　 　//　<=　☆　②引数の指定を変更します
     }
 
     /// <summary>
@@ -113,6 +115,9 @@ public class TapPointDetail : MonoBehaviour
         {
             // TODO 条件として時間を確認する
             currentJobTime--;
+
+            // 残り時間を更新
+            OfflineTimeManager.instance.UpdateCurrentJobTime(jobData.jobNo, currentJobTime);
 
             // 残り時間が 0 以下になったら
             if (currentJobTime <= 0)
@@ -157,5 +162,14 @@ public class TapPointDetail : MonoBehaviour
         // オブジェクトのサイズを初期値に戻す
         transform.localScale = Vector3.one;
     }
+
+    /// <summary>
+    /// myJobNo を外部から参照可能にする
+    /// </summary>
+    public int GetMyJobNo()
+    {
+        return myJobNo;
+    }
+
 
 }

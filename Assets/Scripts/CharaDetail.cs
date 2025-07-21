@@ -34,14 +34,8 @@ public class CharaDetail : MonoBehaviour
     private void OnClickChara()
     {
 
-
-        ////*  ここから追加  *////
-
-
-        // TODO お使い結果をリザルト作成
-
-
-        ////*  ここまで  *////
+        // お使い結果をリザルト作成
+        gameManager.ResultJobs(tapPointDetail);
 
 
         Debug.Log("お使いの結果を表示");

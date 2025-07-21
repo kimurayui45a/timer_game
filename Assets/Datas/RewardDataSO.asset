@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef5be0f3be0ea734ba42757eb5f6ebef, type: 3}
+  m_Name: RewardDataSO
+  m_EditorClassIdentifier: 
+  rewardDatasList:
+  - rewardNo: 0
+    rarityType: 0
+    rarityRate: 50
+    spriteReward: {fileID: 5757750083339748195, guid: feaa9991bd3f8ce4c92f601eb37addd7, type: 3}
+    rewardPoint: 10
+  - rewardNo: 1
+    rarityType: 0
+    rarityRate: 40
+    spriteReward: {fileID: 605162050437240712, guid: 4233d51639ae8a34d8c9d07a953a471c, type: 3}
+    rewardPoint: 20
+  - rewardNo: 2
+    rarityType: 0
+    rarityRate: 30
+    spriteReward: {fileID: 1568175666702191629, guid: 071282d84b2b10f42a0e5fd3e6c69c01, type: 3}
+    rewardPoint: 30
+  - rewardNo: 3
+    rarityType: 1
+    rarityRate: 60
+    spriteReward: {fileID: 8894465885016300276, guid: 04eac9518d0dba34594e8ed8e3489fb9, type: 3}
+    rewardPoint: 100
+  - rewardNo: 4
+    rarityType: 1
+    rarityRate: 40
+    spriteReward: {fileID: 5266980472100321902, guid: f435ba6b2cf86a341b3b70176d08090b, type: 3}
+    rewardPoint: 130
+  - rewardNo: 5
+    rarityType: 2
+    rarityRate: 100
+    spriteReward: {fileID: 806201266061919551, guid: 3d7f3023a271bb749a8643bb842f7e48, type: 3}
+    rewardPoint: 500
